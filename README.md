@@ -1,7 +1,7 @@
 # image-classifier
 This tutorial shows how to classify images of flowers.
 
-## Official Docker images for the machine learning framework TensorFlow
+## Official Docker images for TensorFlow
 
 Docker Pull Command:
 
