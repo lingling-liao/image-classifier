@@ -3,13 +3,13 @@ This tutorial shows how to classify images of flowers.
 
 ## Official Docker images for TensorFlow
 
-Docker Pull Command:
+Docker pull command:
 
 ```
 docker pull tensorflow/tensorflow:2.3.0-gpu-jupyter
 ```
 
-Running Containers:
+Running containers:
 
 ```
 docker run --gpus all -p 6006:6006 -p 8888:8888 -v [local]:/tf -itd tensorflow/tensorflow:2.3.0-gpu-jupyter
