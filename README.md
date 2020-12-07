@@ -17,6 +17,7 @@ docker run --gpus all -p 6006:6006 -p 8888:8888 -v [local]:/tf -itd tensorflow/t
 
 ## Download flower dataset
 
+https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
 
 ## Training a model
 
