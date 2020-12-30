@@ -244,7 +244,7 @@ if __name__ == '__main__':
     tkam.valid_dir = './flower_photos'
     tkam.valid_generator_kwargs = tkam.train_generator_kwargs
     tkam.valid_data_kwargs = dict(
-        subset='validation', shuffle=False)
+        subset='validation', shuffle=True)
     
     train_data = tkam.set_up_data(
         tkam.train_dir, tkam.train_generator_kwargs, tkam.train_data_kwargs)
