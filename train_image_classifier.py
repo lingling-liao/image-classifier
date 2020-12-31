@@ -7,14 +7,15 @@ import custom_generator
 class TrainKerasApplicationsModel:
     
     def __init__(self):
-        # For self.set_up_data
+        # For set_up_data
         self.train_dir = './train_data'
         self.valid_dir = './valid_data'
         self.train_generator_kwargs = {}
         self.valid_generator_kwargs = {}
         self.train_data_kwargs = {}
         self.valid_data_kwargs = {}
-        # For self.compose_model
+        
+        # For compose_model
         self.preprocess = 'xception'
         self.architecture = 'Xception'
         self.architecture_kwargs = {
@@ -29,7 +30,8 @@ class TrainKerasApplicationsModel:
         }
         self.training = False
         self.dropout_rate = .20
-        # For self.compile_model
+        
+        # For compile_model
         self.optimizer = 'Adam'
         self.optimizer_kwargs = {
             'learning_rate': 0.001,
@@ -39,7 +41,8 @@ class TrainKerasApplicationsModel:
         self.metrics = [
             'accuracy',
         ]
-        # For self.train_model
+        
+        # For train_model
         self.log_dir = './logs'
         self.checkpoint_dir = './checkpoint'
         self.patience = None
